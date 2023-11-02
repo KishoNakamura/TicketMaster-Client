@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Specials() {
   return (
-    <ul>
+    <>
       <li><Link href={'#'}>En todos los Especiales</Link></li>
       <li><Link href={'#'}>Certificados de regalo</Link></li>
       <li><Link href={'#'}>Sorteos</Link></li>
@@ -28,6 +28,6 @@ export default function Specials() {
           </span>
         </Link>
       </li>
-    </ul>
+    </>
   )
 }

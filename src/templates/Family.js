@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Family() {
   return (
-    <ul>
+    <>
       <li><Link href={'#'}>Todos los Eventos</Link></li>
       <li><Link href={'#'}>On Ice</Link></li>
       <li><Link href={'#'}>Circos/Espectáculo Infantil</Link></li>
@@ -21,6 +21,6 @@ export default function Family() {
           </span>
         </Link>
       </li>
-    </ul>
+    </>
   )
 }

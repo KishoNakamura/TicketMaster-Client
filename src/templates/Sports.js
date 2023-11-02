@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Sports() {
   return (
-    <ul>
+    <>
       <li><Link href={'#'}>Todos los Deportes</Link></li>
       <li><Link href={'#'}>Automovilismo</Link></li>
       <li><Link href={'#'}>Rodeo</Link></li>

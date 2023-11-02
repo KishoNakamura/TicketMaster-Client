@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function TheaterCulture() {
   return (
-    <ul>
+    <>
       <li><Link href={'#'}>Todos los Eventos Teatro y Culturales</Link></li>
       <li><Link href={'#'}>Ballet/Danza</Link></li>
       <li><Link href={'#'}>Obras de Teatro</Link></li>
@@ -25,6 +25,6 @@ export default function TheaterCulture() {
           </span>
         </Link>
       </li>
-    </ul>
+    </>
   )
 }

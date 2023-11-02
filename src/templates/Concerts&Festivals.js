@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function ConcertsFestivals() {
   return (
-    <ul>
+    <>
       <li><Link href={'#'}>Todos los Conciertos</Link></li>
       <li><Link href={'#'}>Cabaret</Link></li>
       <li><Link href={'#'}>Infantil</Link></li>
@@ -26,6 +26,6 @@ export default function ConcertsFestivals() {
           </span>
         </Link>
       </li>
-    </ul>
+    </>
   )
 }
