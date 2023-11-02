@@ -51,3 +51,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  max-width: 250rem;
+  width: 95%;
+  margin: 0 auto;
+}

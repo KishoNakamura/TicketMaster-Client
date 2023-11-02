@@ -1,0 +1,100 @@
+.header {
+  background-color: var(--black);
+}
+
+.svg_icon_white {
+  fill: var(--white);
+}
+
+/* * Top Header */
+
+.top, .top > div:last-of-type {
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .top {
+    justify-content: space-between;
+  }
+}
+
+.top > div:last-of-type {
+  align-items: center;
+  gap: 1rem;
+}
+
+/* * First Div */
+
+.firstDiv {
+  display: flex;
+  align-items: center;
+}
+
+.firstDiv button {
+  display: flex;
+  gap: .5rem;
+  padding: 1.2rem;
+}
+
+.firstDiv button:active {
+  background-color: var(--blueDegraded);
+}
+
+.firstDiv button:first-of-type img {
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  border: .1rem solid var(--white);
+}
+
+.firstDiv button span {
+  color: var(--white);
+}
+
+.firstDiv button:hover span {
+  text-decoration: underline;
+}
+
+/* * Second Div */
+
+.secondDiv {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .secondDiv {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.secondDiv a {
+  padding: 1rem;
+  color: var(--white);
+}
+
+.secondDiv a:hover {
+  text-decoration: underline;
+}
+
+/* * Third Div */
+
+.thirdDiv {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .thirdDiv {
+    display: block;
+  }
+}
+
+.thirdDiv a {
+  height: 4.4rem;
+}
+
+/* * Bottom Header */
+
+.bottom {
+
+}
