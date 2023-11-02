@@ -4,11 +4,11 @@ import Image from "next/image"
 
 export default function Header() {
   return (
-    <header className={`${styles.header}`}>
-      <div className="container">
-        
-        {/* First header */}
-        <div className={`${styles.top}`}>
+    <header>
+
+      {/* First header */}
+      <div className={`${styles.top}`}>
+        <div className={styles.container}>
           <div className={styles.firstDiv}>
             <button>
               <Image src="/img/BanderaMéxico.png" width={166} height={44} alt="Bandera de Mexico" />
@@ -36,13 +36,29 @@ export default function Header() {
             </div>
           </div>
         </div>
-
-        {/* Second header */}
-        <div className={`${styles.bottom}`}>
-
-        </div>
-
       </div>
+        
+
+      {/* Second header */}
+      <div className={`${styles.bottom}`}>
+        <div className={styles.container}>
+
+          <div className="">
+            <button>
+              <svg className={styles.svg_icon_white} viewBox="0 0 24 24" width="1.5em" height="1.5em" aria-hidden="true" focusable="false"><path d="M23 5.75H1v-1.5h22v1.5Zm-22 5.5h16v1.5H1v-1.5Zm12 7H1v1.5h12v-1.5Z"></path></svg>
+            </button>
+          </div>
+
+          <div className="">
+            
+          </div>
+          
+          <div className="">
+            
+          </div>
+        </div>
+      </div>
+      
     </header>
   )
 }

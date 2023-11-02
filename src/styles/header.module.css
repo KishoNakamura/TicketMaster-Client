@@ -1,24 +1,31 @@
-.header {
-  background-color: var(--black);
-}
-
 .svg_icon_white {
   fill: var(--white);
 }
 
+.container {
+  max-width: 250rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
 /* * Top Header */
 
-.top, .top > div:last-of-type {
+.top {
+  background-color: var(--black);
+}
+
+.top > .container, 
+.top > .container > div:last-of-type {
   display: flex;
 }
 
 @media (min-width: 1024px) {
-  .top {
+  .top > .container {
     justify-content: space-between;
   }
 }
 
-.top > div:last-of-type {
+.top > .container > div:last-of-type {
   align-items: center;
   gap: 1rem;
 }
@@ -96,5 +103,5 @@
 /* * Bottom Header */
 
 .bottom {
-
+  background-color: var(--primary);
 }
