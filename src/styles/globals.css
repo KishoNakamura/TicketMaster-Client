@@ -4,6 +4,9 @@
   --black: rgb(18, 18, 18);
   --purple: rgb(167, 51, 255);
   --white: rgb(255, 255, 255);
+  --gray: rgb(100, 100, 100);
+  --lightGray: rgb(246, 246, 246);
+  --lightBlue: rgb(191, 210, 247);
   --darkBlue: rgb(1, 57, 167);
   --blueDegraded: rgba(255, 255, 255, 0.12);
   --fuente-principal: 'Helvetica', sans-serif;
@@ -20,8 +23,9 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: var(--fuente-principal);
   line-height: 1.4;
+  font-family: var(--fuente-principal);
+  background-color: var(--lightGray);
 }
 
 p, h1, h2, h3, h4, h5, h6, ul, li {
