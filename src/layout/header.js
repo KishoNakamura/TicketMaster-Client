@@ -140,7 +140,7 @@ export default function Header() {
                 ListFamily={ListFamily}
                 ListSpecial={ListSpecial}
               />
-              <p className={styles.logo}>ticketmaster</p>
+              <h1 className={styles.logo}>ticketmaster</h1>
             </div>
 
             {/* Login Button fro Mobile */}
