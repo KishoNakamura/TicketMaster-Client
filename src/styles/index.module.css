@@ -1,0 +1,141 @@
+.container {
+  max-width: 250rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.banner {
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 56.25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 .8rem 2rem 0;
+}
+
+@media (min-width: 720px) {
+    .banner {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 60%, transparent 90%);
+      background-position: center center;
+      min-height: 30vw;
+    }
+}
+
+.banner > div {
+  max-width: 60rem;
+  padding: 2.4rem 1.6rem;
+  margin-left: 1.6rem;
+}
+
+@media (min-width: 720px){
+  .banner > div {
+    padding: 4rem;
+    margin-left: 4rem;
+  }
+}
+
+.banner > div > h3,
+.banner > div > p {
+  color: var(--white);
+  
+}
+
+.banner > div > p {
+  display: none;
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+}
+
+.banner > div > h3 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-bottom: .8rem;
+}
+
+@media (min-width: 720px) {
+  .banner > div > h3 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+
+  .banner > div > p {
+    display: block;
+  }
+}
+
+.banner > div > a {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: .5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 900px) {
+  .gridTemplate {
+    display: grid;
+    /* grid-template-columns: 4fr 1fr; */
+    grid-template-columns: auto 332px;
+    gap: 2rem;
+  }
+}
+
+.discover,
+.mostSearched  {
+  border-top: .1rem solid var(--secondary);
+}
+
+.main {
+  margin-top: 3rem;
+}
+
+.mostSearched {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1024px){
+  .mostSearched {
+    margin-bottom: 2rem;
+  }
+}
+
+.discover {
+  margin-bottom: 4rem;
+}
+
+/* * Headings */
+
+.discover h2,
+.mostSearched h2,
+.benefits h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.discover h2::after,
+.mostSearched h2::after,
+.benefits h2::after {
+  content: '';
+  display: block;
+  height: .5rem;
+  width: 4rem;
+  margin: 0 auto;
+  background-color: var(--purple);
+}
+
+.benefits {
+  border-top: .1rem solid var(--secondary);
+}
+
+@media (min-width: 900px) {
+  .benefits {
+    background-color: var(--white);
+    border-top: unset;
+  }
+}
